@@ -1,5 +1,3 @@
-#/ My.bash_profile, saved to github for backup. the "TODO-verify" are locations that should be verified if copying this file to a new computer
-
 #  ---------------------------------------------------------------------------
 #		
 #  Description:  This file holds all my bash_profile configurations and aliases
