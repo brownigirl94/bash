@@ -1,9 +1,9 @@
-#/.bash_profile
+#/ My.bash_profile, saved to github for backup. the "TODO-verify" are locations that should be verified if copying this file to a new computer
 
 #  ---------------------------------------------------------------------------
 #		
-#  Description:  This file holds all my BASH configurations and aliases
-#		Main source: https://natelandau.com/my-mac-osx-bash_profile/
+#  Description:  This file holds all my bash_profile configurations and aliases
+#  Adapted from natelandau
 
 #  Sections:
 #  1.   Environment Configuration
@@ -30,18 +30,11 @@
 #   Set Paths
 #   ------------------------------------------------------------
 
-# setting location i want terminal to look for binaries on machine
-export PATH=/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:$PATH
+# setting location i want terminal to look for binaries on machine -> TODO-verify, esp. pythong and android
+export PATH=/Users/juliaalvarez/Library/Android/sdk/platform-tools:/Users/juliaalvarez/Library/Android/sdk/tools:/Library/Frameworks/Python.framework/Versions/2.7/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin
 
-# Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
-
-#setting the adb platform-tools
-export PATH=~/Library/Android/sdk/tools:$PATH
-export PATH=~/Library/Android/sdk/platform-tools:$PATH
-
+#   Set Java home -> TODO-verify
+#   ------------------------------------------------------------
 export JAVA_HOME
 JAVA_HOME=$(/usr/libexec/java_home)
 
@@ -222,6 +215,7 @@ ffe () { /usr/bin/find . -name '*'"$@" ; }  # ffe:      Find file whose name end
 #   6.  NETWORKING
 #   ---------------------------
 
+# TODO - uncomment if wish to use
 # alias myip='curl ip.appspot.com'                    # myip:         Public facing IP Address
 # alias netCons='lsof -i'                             # netCons:      Show all open TCP/IP sockets
 # alias flushDNS='dscacheutil -flushcache'            # flushDNS:     Flush out the DNS Cache
@@ -276,6 +270,7 @@ alias mountReadWrite='/sbin/mount -uw /'    # mountReadWrite:   For use when boo
 #   8.  WEB DEVELOPMENT
 #   ---------------------------------------
 
+# TODO - uncomment if wish to use
 # alias apacheEdit='sudo edit /etc/httpd/httpd.conf'      # apacheEdit:       Edit httpd.conf
 # alias apacheRestart='sudo apachectl graceful'           # apacheRestart:    Restart Apache
 # alias editHosts='sudo edit /etc/hosts'                  # editHosts:        Edit /etc/hosts file
