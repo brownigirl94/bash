@@ -1,0 +1,3 @@
+# Just my bash_profile...
+...Saved to my github for backup :) 
+  - The "TODO-verify"s indicate locations that should be verified if copying this file to a new computer. 
