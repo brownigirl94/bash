@@ -12,8 +12,8 @@
 #  6.   Networking
 #  7.   System Operations & Information
 #  8.   Web Development
-#  9.   Reminders & Notes
-#
+#  9.   Other aliases
+#  10.  Reminders & Notes
 #  ---------------------------------------------------------------------------
 
 #   -------------------------------
@@ -280,9 +280,15 @@ alias mountReadWrite='/sbin/mount -uw /'    # mountReadWrite:   For use when boo
 #   -------------------------------------------------------------------
     httpDebug () { /usr/bin/curl $@ -o /dev/null -w "dns: %{time_namelookup} connect: %{time_connect} pretransfer: %{time_pretransfer} starttransfer: %{time_starttransfer} total: %{time_total}\n" ; }
 
+#   ---------------------------------------
+#   9.  OTHER ALIASES
+#   ---------------------------------------
+alias chrome='open -a  Google\ Chrome.app'
+alias fox='open -a  Firefox.app'
+alias safari='open -a  Safari.app'
 
 #   ---------------------------------------
-#   9.  REMINDERS & NOTES
+#   10.  REMINDERS & NOTES
 #   ---------------------------------------
 
 #   remove_disk: spin down unneeded disk
